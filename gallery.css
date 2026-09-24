@@ -84,10 +84,10 @@
 }
 
 .gallery-title {
-    font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2.1rem, 6vw, 3.4rem);
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 6px 0 0;
     text-shadow: 2px 2px 14px rgba(0,0,0,0.5);
 }
@@ -101,10 +101,11 @@
 }
 
 .gallery-script {
-    font-family: 'Caveat', cursive;
-    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.15em;
     color: var(--accent);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .gallery-stats {
@@ -308,7 +309,7 @@
 
 .tile-cat {
     display: block;
-    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.66rem;
     font-weight: 700;
     letter-spacing: 0.14em;
@@ -458,8 +459,8 @@
 
 .lightbox-eyebrow {
     display: block;
-    font-family: 'Cinzel', serif;
-    font-size: 0.85rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -469,8 +470,10 @@
 
 .lightbox-tagline {
     display: block;
-    font-family: 'Caveat', cursive;
-    font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3rem;
     color: #ececec;
 }
 
