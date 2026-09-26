@@ -6,22 +6,34 @@
     <title>Blendy's | Collections</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body class="collections-body">
 
     <!-- Site Navigation -->
     <nav class="site-nav" id="siteNav">
-        <a href="index.html" class="nav-brand">            <span class="nav-wordmark">Blendy's</span>
+        <a href="index.html" class="nav-brand">
+            <span class="nav-wordmark">Blendy's</span>
         </a>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link"><span class="full">Home</span></a>
-            <a href="collections.html" class="nav-link is-current"><span class="full">Collections</span></a>
-            <a href="gallery.html" class="nav-link"><span class="full">Gallery</span></a>
+        <div class="nav-links" id="navMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="custom-order.html" class="nav-link">Custom Cake</a>
+            <a href="collections.html" class="nav-link is-current">Gallery</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="https://wa.me/message/24DMSW3JZMJVN1" class="nav-wa-mobile" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+        <div class="nav-actions">
             <a href="https://wa.me/message/24DMSW3JZMJVN1" class="nav-wa" target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
             </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -31,143 +43,190 @@
     <div class="collections-wrapper">
         <!-- Header Section -->
         <header class="collections-header">
-            <div class="brand-icon logo-icon"><span class="brand-monogram">B</span></div>
-            <div class="location-tag">
-                <span>—</span> KAMPALA &bull; MUYENGA <span>—</span>
-            </div>
+            <img src="images/logo/blendys-logo-final-160.png" alt="Blendy's logo" class="brand-icon logo-icon">
+            <span class="location-tag">Kampala &middot; Muyenga</span>
         </header>
 
         <!-- Title Section -->
         <section class="collections-intro">
             <h1>OUR FULL COLLECTION</h1>
-            <div class="divider-heart">
-                <span class="line"></span>
-                <span class="heart">
-                    <svg viewBox="0 0 24 24" fill="#EF8235" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                </span>
-                <span class="line"></span>
-            </div>
             <p>Custom cakes &amp; desserts, freshly made to order.</p>
         </section>
 
         <!-- Grid Section with Swipeable Cards -->
         <main class="collections-grid">
-            
-            <!-- Card 1: Wedding Cakes -->
+
+            <!-- Card 1: WEDDING CAKES -->
             <div class="collection-card" id="wedding">
                 <div class="card-carousel">
-                    <img src="images/gallery/wedding-03.jpg" alt="Wedding Cake 1" class="carousel-img">
-                    <img src="images/gallery/wedding-02.jpg" alt="Wedding Cake 2" class="carousel-img">
-                    <img src="images/gallery/wedding-01.jpg" alt="Wedding Cake 3" class="carousel-img">
+                    <img src="images/gallery/wedding-03.jpg" alt="WEDDING CAKES 1" class="carousel-img">
+                    <img src="images/gallery/wedding-04.jpg" alt="WEDDING CAKES 2" class="carousel-img">
+                    <img src="images/gallery/wedding-01.jpg" alt="WEDDING CAKES 3" class="carousel-img">
+                    <img src="images/gallery/wedding-02.jpg" alt="WEDDING CAKES 4" class="carousel-img">
                 </div>
                 <div class="card-overlay"></div>
                 <div class="card-content">
                     <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
                     <h2>WEDDING<br>CAKES</h2>
                     <p>Timeless elegance for<br><em>your forever.</em></p>
-                    <a href="https://wa.me/256772243509?text=Hi!%20I'm%20interested%20in%20ordering%20a%20Wedding%20Cake." class="card-wa-btn" target="_blank">
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%27m%20interested%20in%20ordering%20a%20Wedding%20Cake." class="card-wa-btn" target="_blank">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                         ORDER DESIGN
                     </a>
                 </div>
             </div>
 
-            <!-- Card 2: Birthday Dreams (+4 slides) -->
+            <!-- Card 2: BIRTHDAY DREAMS -->
             <div class="collection-card" id="birthday">
                 <div class="card-carousel">
-                    <img src="images/gallery/birthday-12.jpg" alt="Birthday Cake 1" class="carousel-img">
-                    <img src="images/gallery/celebrations-17.jpg" alt="Birthday Cake 2" class="carousel-img">
-                    <img src="images/gallery/birthday-08.jpg" alt="Birthday Cake 3" class="carousel-img">
-                    <img src="images/gallery/birthday-06.jpg" alt="Birthday Cake 4" class="carousel-img">
-                    <img src="images/gallery/birthday-03.jpg" alt="Birthday Cake 5" class="carousel-img">
-                    <img src="images/gallery/birthday-01.jpg" alt="Birthday Cake 6" class="carousel-img">
+                    <img src="images/gallery/birthday-13.jpg" alt="BIRTHDAY DREAMS 1" class="carousel-img">
+                    <img src="images/gallery/birthday-05.jpg" alt="BIRTHDAY DREAMS 2" class="carousel-img">
+                    <img src="images/gallery/birthday-08.jpg" alt="BIRTHDAY DREAMS 3" class="carousel-img">
+                    <img src="images/gallery/birthday-04.jpg" alt="BIRTHDAY DREAMS 4" class="carousel-img">
+                    <img src="images/gallery/birthday-03.jpg" alt="BIRTHDAY DREAMS 5" class="carousel-img">
+                    <img src="images/gallery/birthday-15.jpg" alt="BIRTHDAY DREAMS 6" class="carousel-img">
                 </div>
                 <div class="card-overlay"></div>
                 <div class="card-content">
                     <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
                     <h2>BIRTHDAY<br>DREAMS</h2>
                     <p>Making every birthday<br><em>pure magic.</em></p>
-                    <a href="https://wa.me/256772243509?text=Hi!%20I'm%20interested%20in%20ordering%20a%20Birthday%20Cake." class="card-wa-btn" target="_blank">
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%27m%20interested%20in%20ordering%20a%20Birthday%20Cake." class="card-wa-btn" target="_blank">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                         ORDER DESIGN
                     </a>
                 </div>
             </div>
 
-            <!-- Card 3: Custom Creations (+2 slides) -->
+            <!-- Card 3: CUSTOM &amp; CHARACTER -->
             <div class="collection-card" id="custom">
                 <div class="card-carousel">
-                    <img src="images/gallery/characters-06.jpg" alt="Custom Creation 1" class="carousel-img">
-                    <img src="images/gallery/birthday-15.jpg" alt="Custom Creation 2" class="carousel-img">
-                    <img src="images/gallery/celebrations-02.jpg" alt="Custom Creation 3" class="carousel-img">
-                    <img src="images/gallery/custom-02.jpg" alt="Custom Creation 4" class="carousel-img">
+                    <img src="images/gallery/custom-04.jpg" alt="CUSTOM and CHARACTER 1" class="carousel-img">
+                    <img src="images/gallery/custom-05.jpg" alt="CUSTOM and CHARACTER 2" class="carousel-img">
+                    <img src="images/gallery/custom-01.jpg" alt="CUSTOM and CHARACTER 3" class="carousel-img">
+                    <img src="images/gallery/custom-02.jpg" alt="CUSTOM and CHARACTER 4" class="carousel-img">
                 </div>
                 <div class="card-overlay"></div>
                 <div class="card-content">
                     <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
-                    <h2>CUSTOM<br>CREATIONS</h2>
-                    <p>Your vision,<br><em>sculpted with care.</em></p>
-                    <a href="https://wa.me/256772243509?text=Hi!%20I%20have%20an%20idea%20for%20a%20Custom%20Cake!" class="card-wa-btn" target="_blank">
+                    <h2>CUSTOM &amp;<br>CHARACTER</h2>
+                    <p>Your favourite characters,<br><em>brought to life.</em></p>
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%20have%20an%20idea%20for%20a%20Custom%20Cake%21" class="card-wa-btn" target="_blank">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                         ORDER DESIGN
                     </a>
                 </div>
             </div>
 
-            <!-- Card 4: Celebration Cakes (+2 slides) -->
-            <div class="collection-card">
+            <!-- Card 4: CHRISTENING &amp; RELIGIOUS -->
+            <div class="collection-card" id="christening">
                 <div class="card-carousel">
-                    <img src="images/gallery/celebrations-01.jpg" alt="Celebration 1" class="carousel-img">
-                    <img src="images/gallery/characters-01.jpg" alt="Celebration 2" class="carousel-img">
-                    <img src="images/gallery/celebrations-06.jpg" alt="Celebration 3" class="carousel-img">
-                    <img src="images/gallery/celebrations-15.jpg" alt="Celebration 4" class="carousel-img">
+                    <img src="images/gallery/christening-01.jpg" alt="CHRISTENING and RELIGIOUS 1" class="carousel-img">
+                    <img src="images/gallery/christening-02.jpg" alt="CHRISTENING and RELIGIOUS 2" class="carousel-img">
+                    <img src="images/gallery/christening-03.jpg" alt="CHRISTENING and RELIGIOUS 3" class="carousel-img">
                 </div>
                 <div class="card-overlay"></div>
                 <div class="card-content">
                     <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
-                    <h2>CELEBRATION<br>CAKES</h2>
-                    <p>From milestones to<br><em>unforgettable joys.</em></p>
-                    <a href="https://wa.me/256772243509?text=Hi!%20I'm%20looking%20for%20a%20Celebration%20Cake." class="card-wa-btn" target="_blank">
+                    <h2>CHRISTENING &amp;<br>RELIGIOUS</h2>
+                    <p>Blessed milestones,<br><em>beautifully marked.</em></p>
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%27m%20interested%20in%20ordering%20a%20Christening%20Cake." class="card-wa-btn" target="_blank">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                         ORDER DESIGN
                     </a>
                 </div>
             </div>
 
-            <!-- Card 5: Signature / Passion Fruit -->
-            <div class="collection-card">
+            <!-- Card 5: MILESTONE &amp; BABY -->
+            <div class="collection-card" id="milestone">
                 <div class="card-carousel">
-                    <img src="images/gallery/custom-04.jpg" alt="Signature Passion Fruit Cake 1" class="carousel-img">
-                    <img src="images/gallery/custom-03.jpg" alt="Signature Passion Fruit Cake 2" class="carousel-img">
+                    <img src="images/gallery/milestone-01.jpg" alt="MILESTONE and BABY 1" class="carousel-img">
+                    <img src="images/gallery/milestone-02.jpg" alt="MILESTONE and BABY 2" class="carousel-img">
+                    <img src="images/gallery/milestone-03.jpg" alt="MILESTONE and BABY 3" class="carousel-img">
                 </div>
                 <div class="card-overlay"></div>
                 <div class="card-content">
                     <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
-                    <h2>THE<br>SIGNATURE</h2>
-                    <p>Try our<br><em>Passion Fruit Cake.</em></p>
-                    <a href="https://wa.me/256772243509?text=Hi!%20I'd%20like%20to%20order%20the%20Passion%20Fruit%20Cake." class="card-wa-btn" target="_blank">
+                    <h2>MILESTONE<br>&amp; BABY</h2>
+                    <p>Bumps, babies<br><em>and every first.</em></p>
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%27m%20interested%20in%20a%20Milestone%20/%20Baby%20Cake." class="card-wa-btn" target="_blank">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                         ORDER DESIGN
                     </a>
                 </div>
             </div>
 
-            <!-- Card 6: Cupcakes & Treats -->
-            <div class="collection-card" id="treats">
+            <!-- Card 6: CELEBRATIONS &amp; CORPORATE -->
+            <div class="collection-card" id="celebrations">
                 <div class="card-carousel">
-                    <img src="images/gallery/treats-02.jpg" alt="Cupcakes 1" class="carousel-img">
-                    <img src="images/gallery/treats-01.jpg" alt="Cupcakes 2" class="carousel-img">
-                    <img src="images/gallery/treats-03.jpg" alt="Cookies 1" class="carousel-img">
-                    <img src="images/gallery/treats-04.jpg" alt="Cookies 2" class="carousel-img">
+                    <img src="images/gallery/celebrations-04.jpg" alt="CELEBRATIONS and CORPORATE 1" class="carousel-img">
+                    <img src="images/gallery/celebrations-01.jpg" alt="CELEBRATIONS and CORPORATE 2" class="carousel-img">
+                    <img src="images/gallery/celebrations-03.jpg" alt="CELEBRATIONS and CORPORATE 3" class="carousel-img">
+                    <img src="images/gallery/celebrations-02.jpg" alt="CELEBRATIONS and CORPORATE 4" class="carousel-img">
                 </div>
                 <div class="card-overlay"></div>
                 <div class="card-content">
                     <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
-                    <h2>CUPCAKES<br>&amp; MORE</h2>
-                    <p>Delightful treats,<br><em>baked to perfection.</em></p>
-                    <a href="https://wa.me/256772243509?text=Hi!%20I'm%20interested%20in%20ordering%20Cupcakes%20%26%20More." class="card-wa-btn" target="_blank">
+                    <h2>CELEBRATIONS<br>&amp; CORPORATE</h2>
+                    <p>From office parties to<br><em>unforgettable joys.</em></p>
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%27m%20looking%20for%20a%20Celebration%20or%20Corporate%20Cake." class="card-wa-btn" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        ORDER DESIGN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 7: CUPCAKES &amp; TREATS -->
+            <div class="collection-card" id="cupcakes">
+                <div class="card-carousel">
+                    <img src="images/gallery/cupcakes-04.jpg" alt="CUPCAKES and TREATS 1" class="carousel-img">
+                    <img src="images/gallery/cupcakes-01.jpg" alt="CUPCAKES and TREATS 2" class="carousel-img">
+                    <img src="images/gallery/cupcakes-03.jpg" alt="CUPCAKES and TREATS 3" class="carousel-img">
+                    <img src="images/gallery/cupcakes-02.jpg" alt="CUPCAKES and TREATS 4" class="carousel-img">
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
+                    <h2>CUPCAKES<br>&amp; TREATS</h2>
+                    <p>Delightful bites,<br><em>baked to perfection.</em></p>
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%27m%20interested%20in%20ordering%20Cupcakes." class="card-wa-btn" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        ORDER DESIGN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 8: FUDGY BROWNIES -->
+            <div class="collection-card" id="brownies">
+                <div class="card-carousel">
+                    <img src="images/gallery/brownies-01.jpg" alt="FUDGY BROWNIES 1" class="carousel-img">
+                    <img src="images/gallery/brownies-04.jpg" alt="FUDGY BROWNIES 2" class="carousel-img">
+                    <img src="images/gallery/brownies-02.jpg" alt="FUDGY BROWNIES 3" class="carousel-img">
+                    <img src="images/gallery/brownies-03.jpg" alt="FUDGY BROWNIES 4" class="carousel-img">
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
+                    <h2>FUDGY<br>BROWNIES</h2>
+                    <p>Rich, chocolatey<br><em>and gone in minutes.</em></p>
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%27m%20interested%20in%20ordering%20Brownies." class="card-wa-btn" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        ORDER DESIGN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 9: BANANA BREAD -->
+            <div class="collection-card" id="bread">
+                <div class="card-carousel">
+                    <img src="images/gallery/bread-01.jpg" alt="BANANA BREAD 1" class="carousel-img">
+                </div>
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <div class="swipe-indicator"><span>&larr;</span> SWIPE <span>&rarr;</span></div>
+                    <h2>BANANA<br>BREAD</h2>
+                    <p>A cosy classic,<br><em>baked fresh.</em></p>
+                    <a href="https://wa.me/256772243509?text=Hi%21%20I%27m%20interested%20in%20ordering%20Banana%20Bread." class="card-wa-btn" target="_blank">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                         ORDER DESIGN
                     </a>
@@ -184,17 +243,35 @@
                 </svg>
                 WHATSAPP US
             </a>
-            <a href="gallery.html" class="back-link">VIEW FULL GALLERY &gt;</a>
-            <a href="index.html" class="back-link">&lt; BACK TO HOME</a>
+            <div class="footer-link-row">
+                <a href="gallery.html" class="back-link">View full gallery <span class="arrow">&rarr;</span></a>
+                <a href="index.html" class="back-link"><span class="arrow">&larr;</span> Back to home</a>
+            </div>
         </footer>
     </div>
 
-    <script>
-        const nav = document.getElementById('siteNav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('is-scrolled', window.scrollY > 40);
-        }, { passive: true });
-    </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <span class="nav-wordmark">Blendy's</span>
+        </div>
+        <div class="footer-details">
+            <a href="https://maps.google.com/?q=Muyenga,+Kampala,+Uganda" target="_blank" rel="noopener noreferrer">Muyenga, Kampala, Uganda</a>
+            <a href="tel:+256772243509">0772 243 509</a>
+        </div>
+        <div class="footer-links">
+            <a href="menu.html">Menu</a>
+            <a href="custom-order.html">Custom Cake</a>
+            <a href="collections.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.instagram.com/blendysug" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.tiktok.com/@blendysug" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
 
     <!-- Jahri Web Studios credit tag (subtle, non-intrusive) -->
     <div class="jahri-credit" aria-hidden="true">Created by Jahri Web Studios</div>

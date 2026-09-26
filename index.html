@@ -23,28 +23,39 @@
     <meta name="twitter:description" content="Your go-to for cakes in Kampala. Birthday, wedding &amp; custom cakes, cupcakes and our signature Passion Fruit Cake.">
     <meta name="twitter:image" content="https://blendysug.github.io/assets/og-image.png">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230a0a0a' stroke='%23EF8235' stroke-width='2'/%3E%3Ctext x='50' y='66' font-family='Georgia, serif' font-style='italic' font-weight='700' font-size='46' text-anchor='middle' fill='%23EF8235'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <title>Blendy's | Custom Cakes &amp; Desserts, Kampala</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Playfair Display (headings/italic accents) + Montserrat (body/UI)
-         + Mrs Saint Delafield (used only for the "Blendy's" logotype) -->
+    <!-- Google Fonts: Lobster (matches the Blendy's logo script — used for headings/logo)
+         + Poppins (body/UI text) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Site Navigation -->
     <nav class="site-nav" id="siteNav">
-        <a href="index.html" class="nav-brand">            <span class="nav-wordmark">Blendy's</span>
+        <a href="index.html" class="nav-brand">
+            <span class="nav-wordmark">Blendy's</span>
         </a>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link is-current"><span class="full">Home</span></a>
-            <a href="collections.html" class="nav-link"><span class="full">Collections</span></a>
-            <a href="gallery.html" class="nav-link"><span class="full">Gallery</span></a>
+        <div class="nav-links" id="navMenu">
+            <a href="index.html" class="nav-link is-current">Home</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="custom-order.html" class="nav-link">Custom Cake</a>
+            <a href="collections.html" class="nav-link">Gallery</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="https://wa.me/message/24DMSW3JZMJVN1" class="nav-wa-mobile" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+        <div class="nav-actions">
             <a href="https://wa.me/message/24DMSW3JZMJVN1" class="nav-wa" target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
             </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -84,13 +95,13 @@
     <!-- Signature Cake Spotlight -->
     <section class="signature-section">
         <div class="signature-media">
-            <img src="images/gallery/custom-04.jpg" alt="Blendy's signature Passion Fruit Cake" loading="lazy">
+            <img src="images/gallery/birthday-09.jpg" alt="Blendy's signature Passion Fruit Cake" loading="lazy">
         </div>
         <div class="signature-copy">
             <span class="eyebrow">THE SIGNATURE</span>
             <h2>Passion Fruit Cake</h2>
             <p>Our most-requested flavour — light sponge, tangy passion fruit filling and a smooth finish. Once you try it, you'll see why regulars keep coming back for it.</p>
-            <a href="https://wa.me/message/24DMSW3JZMJVN1?text=Hi!%20I%27d%20like%20to%20order%20the%20Passion%20Fruit%20Cake." class="text-link" target="_blank" rel="noopener noreferrer">ORDER THE SIGNATURE <span class="arrow">&gt;</span></a>
+            <a href="https://wa.me/256772243509?text=Hi!%20I%27d%20like%20to%20order%20the%20Passion%20Fruit%20Cake." class="text-link" target="_blank" rel="noopener noreferrer">ORDER THE SIGNATURE <span class="arrow">&gt;</span></a>
         </div>
     </section>
 
@@ -101,21 +112,88 @@
             <h2>Freshly made to order</h2>
         </div>
         <div class="offerings-grid">
-            <a href="collections.html#birthday" class="offering-card">
-                <img src="images/thumbs/birthday-01.jpg" alt="Birthday cakes" loading="lazy">
+            <a href="menu.html?cat=birthday" class="offering-card">
+                <img src="images/thumbs/birthday-13.jpg" alt="Birthday cakes" loading="lazy">
                 <span>Birthday Cakes</span>
             </a>
-            <a href="collections.html#wedding" class="offering-card">
-                <img src="images/thumbs/wedding-01.jpg" alt="Wedding cakes" loading="lazy">
+            <a href="menu.html?cat=wedding" class="offering-card">
+                <img src="images/thumbs/wedding-04.jpg" alt="Wedding cakes" loading="lazy">
                 <span>Wedding Cakes</span>
             </a>
-            <a href="collections.html#custom" class="offering-card">
-                <img src="images/thumbs/characters-01.jpg" alt="Custom and character cakes" loading="lazy">
+            <a href="menu.html?cat=custom" class="offering-card">
+                <img src="images/thumbs/custom-05.jpg" alt="Custom and character cakes" loading="lazy">
                 <span>Custom &amp; Character</span>
             </a>
-            <a href="collections.html#treats" class="offering-card">
-                <img src="images/thumbs/treats-01.jpg" alt="Cupcakes and treats" loading="lazy">
+            <a href="menu.html?cat=christening" class="offering-card">
+                <img src="images/thumbs/christening-01.jpg" alt="Christening and religious cakes" loading="lazy">
+                <span>Christening</span>
+            </a>
+            <a href="menu.html?cat=celebrations" class="offering-card">
+                <img src="images/thumbs/celebrations-04.jpg" alt="Celebrations and corporate cakes" loading="lazy">
+                <span>Celebrations &amp; Corporate</span>
+            </a>
+            <a href="menu.html?cat=cupcakes" class="offering-card">
+                <img src="images/thumbs/cupcakes-04.jpg" alt="Cupcakes and treats" loading="lazy">
                 <span>Cupcakes &amp; Treats</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-section">
+        <div class="section-heading">
+            <span class="eyebrow">HOW IT WORKS</span>
+            <h2>Ordering is this simple</h2>
+        </div>
+        <div class="how-grid">
+            <div class="how-step">
+                <span class="how-num">1</span>
+                <h3>Pick your bake</h3>
+                <p>Browse the <a href="menu.html">menu</a> or start a <a href="custom-order.html">custom design</a>.</p>
+            </div>
+            <div class="how-step">
+                <span class="how-num">2</span>
+                <h3>Chat on WhatsApp</h3>
+                <p>Confirm flavour, size and your date &mdash; all in one message.</p>
+            </div>
+            <div class="how-step">
+                <span class="how-num">3</span>
+                <h3>Pickup or delivery</h3>
+                <p>Freshly baked and ready when you need it, in Muyenga.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="bestsellers-section">
+        <div class="section-heading">
+            <span class="eyebrow">FAN FAVOURITES</span>
+            <h2>Our bestsellers</h2>
+        </div>
+        <div class="bestsellers-track">
+            <a href="https://wa.me/256772243509?text=Hi!%20I%27d%20like%20to%20order%20the%20Chocolate%20Drip%20Cake." class="bestseller-card" target="_blank" rel="noopener noreferrer">
+                <img src="images/thumbs/birthday-05.jpg" alt="Chocolate Drip Cake" loading="lazy">
+                <span>Chocolate Drip Cake</span>
+            </a>
+            <a href="https://wa.me/256772243509?text=Hi!%20I%27d%20like%20to%20order%20a%20Character%20Drip%20Cake." class="bestseller-card" target="_blank" rel="noopener noreferrer">
+                <img src="images/thumbs/birthday-04.jpg" alt="Character Drip Cake" loading="lazy">
+                <span>Character Drip Cake</span>
+            </a>
+            <a href="https://wa.me/256772243509?text=Hi!%20I%27d%20like%20to%20order%20a%20Tiered%20Wedding%20Cake." class="bestseller-card" target="_blank" rel="noopener noreferrer">
+                <img src="images/thumbs/wedding-03.jpg" alt="Tiered Wedding Cake" loading="lazy">
+                <span>Tiered Wedding Cake</span>
+            </a>
+            <a href="https://wa.me/256772243509?text=Hi!%20I%27d%20like%20to%20order%20a%20Character%20Cake." class="bestseller-card" target="_blank" rel="noopener noreferrer">
+                <img src="images/thumbs/custom-04.jpg" alt="Character Cake" loading="lazy">
+                <span>Character Cake</span>
+            </a>
+            <a href="https://wa.me/256772243509?text=Hi!%20I%27d%20like%20to%20order%20Custom%20Photo%20Cupcakes." class="bestseller-card" target="_blank" rel="noopener noreferrer">
+                <img src="images/thumbs/cupcakes-04.jpg" alt="Custom Photo Cupcakes" loading="lazy">
+                <span>Custom Photo Cupcakes</span>
+            </a>
+            <a href="https://wa.me/256772243509?text=Hi!%20I%27d%20like%20to%20order%20a%20Brownie%20Box." class="bestseller-card" target="_blank" rel="noopener noreferrer">
+                <img src="images/thumbs/brownies-01.jpg" alt="Brownie Box" loading="lazy">
+                <span>Brownie Box</span>
             </a>
         </div>
     </section>
@@ -135,6 +213,27 @@
                 <h3>Granola</h3>
                 <p>100% organic, small-batch granola for a healthier treat between cake orders.</p>
             </div>
+            <div class="beyond-card">
+                <h3>Brownies</h3>
+                <p>Fudgy, rich brownies boxed fresh &mdash; a regular gifting favourite.</p>
+            </div>
+            <div class="beyond-card">
+                <h3>Banana Bread</h3>
+                <p>A cosy classic, baked in loaves, plain or with chocolate chips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Love -->
+    <section class="love-section">
+        <div class="section-heading">
+            <span class="eyebrow">CLIENT LOVE</span>
+            <h2>Real moments, real orders</h2>
+        </div>
+        <div class="love-grid">
+            <img src="images/site/about-052.jpg" alt="Client celebrating with a Blendy's cake" loading="lazy">
+            <img src="images/site/about-045.jpg" alt="A baby's cake smash celebration" loading="lazy">
+            <img src="images/site/about-047.jpg" alt="Family celebrating a first birthday with a Blendy's cupcake" loading="lazy">
         </div>
     </section>
 
@@ -154,26 +253,25 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-brand">            <span class="nav-wordmark">Blendy's</span>
+        <div class="footer-brand">
+            <span class="nav-wordmark">Blendy's</span>
         </div>
         <div class="footer-details">
             <a href="https://maps.google.com/?q=Muyenga,+Kampala,+Uganda" target="_blank" rel="noopener noreferrer">Muyenga, Kampala, Uganda</a>
             <a href="tel:+256772243509">0772 243 509</a>
         </div>
         <div class="footer-links">
-            <a href="collections.html">Collections</a>
-            <a href="gallery.html">Gallery</a>
+            <a href="menu.html">Menu</a>
+            <a href="custom-order.html">Custom Cake</a>
+            <a href="collections.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
             <a href="https://www.instagram.com/blendysug" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://www.tiktok.com/@blendysug" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
     </footer>
 
-    <script>
-        const nav = document.getElementById('siteNav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('is-scrolled', window.scrollY > 40);
-        }, { passive: true });
-    </script>
+    <script src="nav.js"></script>
 
     <!-- Jahri Web Studios credit tag (subtle, non-intrusive) -->
     <div class="jahri-credit" aria-hidden="true">Created by Jahri Web Studios</div>

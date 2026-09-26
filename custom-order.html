@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blendy's | Build Your Custom Cake</title>
+    <meta name="description" content="Design your custom cake with Blendy's — pick your flavour, size and date, and send the details straight to WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom-order.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body class="order-body">
+
+    <!-- Site Navigation -->
+    <nav class="site-nav" id="siteNav">
+        <a href="index.html" class="nav-brand">
+            <span class="nav-wordmark">Blendy's</span>
+        </a>
+        <div class="nav-links" id="navMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="custom-order.html" class="nav-link is-current">Custom Cake</a>
+            <a href="collections.html" class="nav-link">Gallery</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="https://wa.me/message/24DMSW3JZMJVN1" class="nav-wa-mobile" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+        <div class="nav-actions">
+            <a href="https://wa.me/message/24DMSW3JZMJVN1" class="nav-wa" target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="top-fade-bg"></div>
+
+    <div class="order-wrapper">
+
+        <header class="order-hero">
+            <img src="images/logo/blendys-logo-final-160.png" alt="Blendy's logo" class="brand-icon logo-icon">
+            <span class="location-tag">Kampala &middot; Muyenga</span>
+            <h1 class="order-title">Build Your Custom Cake</h1>
+            <p class="order-lede">Answer a few quick questions and we'll compile everything into one message — just hit send on WhatsApp and we'll take it from there.</p>
+        </header>
+
+        <div class="order-layout">
+        <form class="order-form" id="customOrderForm">
+
+            <!-- Step 1: Occasion -->
+            <div class="order-field">
+                <label for="occasion">1. What's the occasion?</label>
+                <select id="occasion" name="occasion" required>
+                    <option value="" disabled selected>Select an occasion</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="Baby Shower">Baby Shower</option>
+                    <option value="Other celebration">Other celebration</option>
+                </select>
+            </div>
+
+            <!-- Step 2: Flavour -->
+            <div class="order-field">
+                <label for="flavour">2. Pick a flavour</label>
+                <select id="flavour" name="flavour" required>
+                    <option value="" disabled selected>Select a flavour</option>
+                    <option value="Passion Fruit (Signature)">Passion Fruit (Signature)</option>
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Red Velvet">Red Velvet</option>
+                    <option value="Marble">Marble</option>
+                    <option value="Fruit">Fruit</option>
+                    <option value="Blueberry">Blueberry</option>
+                    <option value="Not sure yet">Not sure yet — suggest one</option>
+                </select>
+            </div>
+
+            <!-- Step 3: Guest estimator -->
+            <div class="order-field order-estimator">
+                <label for="guestCount">3. How many guests? <span class="order-field-hint">(optional — we'll suggest a size)</span></label>
+                <div class="order-estimator-row">
+                    <input type="number" id="guestCount" name="guestCount" min="1" placeholder="e.g. 20">
+                    <button type="button" id="estimateBtn" class="order-estimate-btn">Suggest a size</button>
+                </div>
+                <p class="order-estimate-result" id="estimateResult"></p>
+            </div>
+
+            <!-- Step 4: Size -->
+            <div class="order-field">
+                <label for="size">4. Size / weight</label>
+                <select id="size" name="size" required>
+                    <option value="" disabled selected>Select a size</option>
+                    <option value="1kg (serves ~8)">1kg &mdash; serves about 8</option>
+                    <option value="2kg (serves ~15)">2kg &mdash; serves about 15</option>
+                    <option value="3kg (serves ~25)">3kg &mdash; serves about 25</option>
+                    <option value="4-5kg (serves ~35-45)">4&ndash;5kg &mdash; serves about 35&ndash;45</option>
+                    <option value="Multi-tier (custom quote)">Multi-tier &mdash; custom quote</option>
+                </select>
+            </div>
+
+            <!-- Step 5: Add-ons -->
+            <div class="order-field">
+                <label>5. Any add-ons?</label>
+                <div class="order-checkbox-group">
+                    <label class="order-checkbox"><input type="checkbox" name="addons" value="Candles"> Candles</label>
+                    <label class="order-checkbox"><input type="checkbox" name="addons" value="Birthday card / message topper"> Card / message topper</label>
+                    <label class="order-checkbox"><input type="checkbox" name="addons" value="Balloons"> Balloons</label>
+                    <label class="order-checkbox"><input type="checkbox" name="addons" value="Sparklers"> Sparklers</label>
+                </div>
+            </div>
+
+            <!-- Step 6: Date -->
+            <div class="order-field">
+                <label for="dateNeeded">6. Date needed</label>
+                <input type="date" id="dateNeeded" name="dateNeeded" required>
+            </div>
+
+            <!-- Step 7: Delivery/pickup -->
+            <div class="order-field">
+                <label>7. Delivery or pickup?</label>
+                <div class="order-radio-group">
+                    <label class="order-radio"><input type="radio" name="fulfilment" value="Pickup in Muyenga" checked> Pickup in Muyenga</label>
+                    <label class="order-radio"><input type="radio" name="fulfilment" value="Delivery (fee may apply)"> Delivery (fee may apply)</label>
+                </div>
+            </div>
+
+            <!-- Step 8: Reference & notes -->
+            <div class="order-field">
+                <label for="notes">8. Reference photo &amp; special instructions</label>
+                <p class="order-field-hint">Have a photo or Pinterest link in mind? Mention it here — you can attach the actual image once the WhatsApp chat opens.</p>
+                <textarea id="notes" name="notes" rows="4" placeholder="e.g. Something like the cake in the photo I'll send, in pink and gold, with 'Happy 30th Aisha' on top."></textarea>
+            </div>
+
+        </form>
+
+        <!-- Live order summary -->
+        <aside class="order-summary" id="orderSummary">
+            <span class="order-summary-eyebrow">YOUR ORDER SO FAR</span>
+            <ul class="order-summary-list">
+                <li><span>Occasion</span><strong id="sumOccasion">&mdash;</strong></li>
+                <li><span>Flavour</span><strong id="sumFlavour">&mdash;</strong></li>
+                <li><span>Size</span><strong id="sumSize">&mdash;</strong></li>
+                <li><span>Add-ons</span><strong id="sumAddons">None</strong></li>
+                <li><span>Date</span><strong id="sumDate">&mdash;</strong></li>
+                <li><span>Fulfilment</span><strong id="sumFulfilment">Pickup in Muyenga</strong></li>
+            </ul>
+            <div class="order-summary-total">
+                <span>Price</span>
+                <strong>Confirmed on WhatsApp</strong>
+            </div>
+            <button type="submit" form="customOrderForm" class="whatsapp-btn order-submit-btn">
+                <svg class="wa-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                Send My Request via WhatsApp
+            </button>
+            <p class="order-form-note">This opens WhatsApp with everything filled in — nothing is sent until you hit send there.</p>
+        </aside>
+        </div>
+
+        <div class="footer-link-row order-back-row">
+            <a href="menu.html" class="back-link"><span class="arrow">&larr;</span> Browse the menu instead</a>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <span class="nav-wordmark">Blendy's</span>
+        </div>
+        <div class="footer-details">
+            <a href="https://maps.google.com/?q=Muyenga,+Kampala,+Uganda" target="_blank" rel="noopener noreferrer">Muyenga, Kampala, Uganda</a>
+            <a href="tel:+256772243509">0772 243 509</a>
+        </div>
+        <div class="footer-links">
+            <a href="menu.html">Menu</a>
+            <a href="custom-order.html">Custom Cake</a>
+            <a href="collections.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.instagram.com/blendysug" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.tiktok.com/@blendysug" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="custom-order.js"></script>
+
+    <!-- Jahri Web Studios credit tag (subtle, non-intrusive) -->
+    <div class="jahri-credit" aria-hidden="true">Created by Jahri Web Studios</div>
+</body>
+</html>
